@@ -1,0 +1,325 @@
+.ca-control-panel {
+    background-color: #282828;
+    border-width: 1px;
+    border-color: #3C3C3C;
+    border-radius: 4px;
+    padding: 8px;
+    margin: 4px;
+    flex-direction: column;
+    width: 50%;
+    max-width: 50%;
+    min-width: 300px;
+    height: 400px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    position: relative;
+    padding-bottom: 80px;
+}
+
+.header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.title {
+    font-size: 14px;
+    color: white;
+    margin-bottom: 0px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-left;
+}
+
+.toggle-ui-btn {
+    background-color: #3C3C3C;
+    border-width: 1px;
+    border-color: #505050;
+    border-radius: 2px;
+    padding: 4px 8px;
+    font-size: 12px;
+    color: white;
+    min-width: 24px;
+    min-height: 20px;
+}
+
+.toggle-ui-btn:hover {
+    background-color: #464646;
+}
+
+.ui-content {
+    flex-direction: column;
+}
+
+.section-title {
+    font-size: 12px;
+    color: white;
+    margin-bottom: 4px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-left;
+}
+
+.layer-controls-container {
+    margin-bottom: 8px;
+    flex-direction: column;
+}
+
+.layer-header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+
+.layer-list {
+    flex-direction: column;
+    max-height: 200px;
+    overflow: hidden;
+}
+
+.layer-rule-item {
+    background-color: #323232;
+    border-width: 1px;
+    border-color: #464646;
+    border-radius: 3px;
+    padding: 4px;
+    margin-bottom: 2px;
+    flex-direction: row;
+    align-items: center;
+    height: 24px;
+}
+
+.layer-rule-item > * {
+    margin-right: 4px;
+}
+
+.layer-info {
+    flex-direction: row;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.layer-range-label {
+    color: white;
+    font-size: 10px;
+    margin-right: 8px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-left;
+}
+
+.rule-summary {
+    color: white;
+    font-size: 9px;
+}
+
+.remove-layer-btn {
+    background-color: #782828;
+    border-width: 1px;
+    border-color: #8C3C3C;
+    color: #FFC8C8;
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+}
+
+.add-layer-btn {
+    background-color: #287828;
+    border-width: 1px;
+    border-color: #3C8C3C;
+    color: white;
+    height: 20px;
+    font-size: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+}
+
+.simulation-controls {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    right: 8px;
+    flex-direction: column;
+    background-color: gray;
+    border-width: 1px;
+    border-color: #3C3C3C;
+    border-radius: 4px;
+    padding: 8px;
+    z-index: 1000;
+}
+
+.control-buttons {
+    flex-direction: row;
+    margin-bottom: 4px;
+}
+
+.control-btn {
+    margin-right: 4px;
+    height: 24px;
+    font-size: 10px;
+    border-radius: 3px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.start-btn {
+    background-color: #287828;
+    border-color: #3C8C3C;
+    color: white;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+}
+
+.stop-btn {
+    background-color: #782828;
+    border-color: #8C3C3C;
+    color: white;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+}
+
+.step-btn {
+    background-color: #285078;
+    border-color: #3C648C;
+    color: white;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+}
+
+.reset-btn {
+    background-color: #785028;
+    border-color: #8C643C;
+    color: white;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+}
+
+.simulation-info {
+    flex-direction: column;
+}
+
+.info-label {
+    color: white;
+    font-size: 10px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-left;
+}
+
+/* Dialog Styles */
+.rule-dialog {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.dialog-content {
+    background-color: rgb(50, 50, 50);
+    border-width: 1px;
+    border-color: rgb(70, 70, 70);
+    border-radius: 4px;
+    padding: 12px;
+    width: 250px;
+    flex-direction: column;
+}
+
+.dialog-title {
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 8px;
+    -unity-font-style: bold;
+}
+
+.dialog-fields {
+    flex-direction: column;
+    margin-bottom: 8px;
+}
+
+.field-row {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.field-label {
+    color: white;
+    font-size: 10px;
+    width: 60px;
+    margin-right: 4px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-left;
+}
+
+.dialog-field {
+    height: 18px;
+    font-size: 10px;
+    margin-right: 4px;
+}
+
+.dialog-field.small {
+    width: 40px;
+}
+
+.field-separator {
+    color: white;
+    font-size: 9px;
+    margin-right: 4px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+}
+
+.dialog-buttons {
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.dialog-btn {
+    height: 20px;
+    font-size: 10px;
+    margin-left: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.cancel-btn {
+    background-color: rgb(80, 80, 80);
+    border-color: rgb(100, 100, 100);
+    color: white;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+}
+
+.confirm-btn {
+    background-color: rgb(40, 120, 40);
+    border-color: rgb(60, 140, 60);
+    color: white;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+}
+
+/* Hover effects */
+.control-btn:hover {
+    opacity: 0.8;
+}
+
+.layer-rule-item:hover {
+    background-color: rgb(55, 55, 55);
+}
+
+.add-layer-btn:hover {
+    background-color: rgb(50, 130, 50);
+}
+
+.remove-layer-btn:hover {
+    background-color: rgb(130, 50, 50);
+}
+
+.dialog-btn:hover {
+    opacity: 0.8;
+}

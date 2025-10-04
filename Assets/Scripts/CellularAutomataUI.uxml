@@ -1,0 +1,76 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="ca-control-panel" class="ca-control-panel">
+        <ui:VisualElement name="header" class="header">
+            <ui:Label text="CA Controls" name="title" class="title" />
+            <ui:Button text="Toggle UI Visibility" name="toggle-ui-btn" class="toggle-ui-btn" />
+        </ui:VisualElement>
+        
+        <ui:VisualElement name="ui-content" class="ui-content">
+            <ui:VisualElement name="layer-controls-container" class="layer-controls-container">
+                <ui:VisualElement name="layer-header" class="layer-header">
+                    <ui:Label text="Layer Rules" class="section-title" />
+                    <ui:Button text="+ Add Rule" name="add-layer-btn" class="add-layer-btn" />
+                </ui:VisualElement>
+                
+                <ui:VisualElement name="layer-list" class="layer-list">
+                    <!-- Layer controls will be dynamically added here -->
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:VisualElement name="rule-dialog" class="rule-dialog" style="display: none;">
+                <ui:VisualElement name="dialog-content" class="dialog-content">
+                    <ui:Label text="Add New Rule" class="dialog-title" />
+                    
+                    <ui:VisualElement name="dialog-fields" class="dialog-fields">
+                        <ui:VisualElement name="field-row" class="field-row">
+                            <ui:Label text="Name:" class="field-label" />
+                            <ui:TextField name="rule-name-field" class="dialog-field" value="New Rule" />
+                        </ui:VisualElement>
+                        
+                        <ui:VisualElement name="field-row" class="field-row">
+                            <ui:Label text="Layers:" class="field-label" />
+                            <ui:IntegerField name="start-layer-field" class="dialog-field small" value="0" />
+                            <ui:Label text="to" class="field-separator" />
+                            <ui:IntegerField name="end-layer-field" class="dialog-field small" value="19" />
+                        </ui:VisualElement>
+                        
+                        <ui:VisualElement name="field-row" class="field-row">
+                            <ui:Label text="Survival:" class="field-label" />
+                            <ui:IntegerField name="survival-min-field" class="dialog-field small" value="2" />
+                            <ui:Label text="to" class="field-separator" />
+                            <ui:IntegerField name="survival-max-field" class="dialog-field small" value="3" />
+                        </ui:VisualElement>
+                        
+                        <ui:VisualElement name="field-row" class="field-row">
+                            <ui:Label text="Birth:" class="field-label" />
+                            <ui:IntegerField name="birth-min-field" class="dialog-field small" value="3" />
+                            <ui:Label text="to" class="field-separator" />
+                            <ui:IntegerField name="birth-max-field" class="dialog-field small" value="3" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    
+                    <ui:VisualElement name="dialog-buttons" class="dialog-buttons">
+                        <ui:Button text="Cancel" name="dialog-cancel-btn" class="dialog-btn cancel-btn" />
+                        <ui:Button text="Add Rule" name="dialog-confirm-btn" class="dialog-btn confirm-btn" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            
+            <ui:VisualElement name="simulation-controls" class="simulation-controls">
+                <ui:VisualElement name="control-buttons" class="control-buttons">
+                    <ui:Button text="Start" name="start-btn" class="control-btn start-btn" />
+                    <ui:Button text="Stop" name="stop-btn" class="control-btn stop-btn" />
+                    <ui:Button text="Step" name="step-btn" class="control-btn step-btn" />
+                    <ui:Button text="Reset" name="reset-btn" class="control-btn reset-btn" />
+                </ui:VisualElement>
+                
+                <ui:VisualElement name="simulation-info" class="simulation-info">
+                    <ui:Label text="Layer: 0/60" name="layer-info-label" class="info-label" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            
+            <!-- Dialog for adding new rules -->
+            
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
