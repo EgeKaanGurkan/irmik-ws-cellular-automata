@@ -342,7 +342,7 @@ public class CellularAutomataUIController : MonoBehaviour
     {
         if (stackModel != null)
         {
-            layerInfoLabel.text = $"Layer: {stackModel.currentLayer}/{stackModel.stack.layerCount}";
+            layerInfoLabel.text = $"Layer: {stackModel.currentLayer + 1}/{stackModel.stack.layerCount}";
         }
     }
 
